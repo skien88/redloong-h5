@@ -1,25 +1,168 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>红龙榴莲投资平台</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老挝红龙榴莲产业集团 - 榴莲果树投资项目</title>
+    <style>
+        :root {
+            --primary: #2a5f3f; /* 主品牌色 */
+            --secondary: #d4a762; /* 强调色 */
+            --light: #f8f9fa;
+            --dark: #343a40;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        /* 封面设计 */
+        .cover {
+            background: linear-gradient(rgba(0,0,0,0.5), url('果园实景.jpg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 2rem;
+        }
+
+        /* 通用内容区块 */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section:nth-child(even) {
+            background: var(--light);
+        }
+
+        /* 数据表格样式 */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .data-table th,
+        .data-table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .data-table th {
+            background: var(--primary);
+            color: white;
+        }
+        .data-table tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        /* 特色图标 */
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 1rem;
+            }
+            .data-table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>欢迎来到红龙榴莲投资平台</h1>
-    <p>认养果树 · 拥抱未来</p>
-  </header>
-  <section>
-    <h2>项目简介</h2>
-    <p>投资黑刺榴莲果树，享受30年稳定回报。</p>
-  </section>
-  <section>
-    <a href="qr.html" class="button">扫码了解详情</a>
-  </section>
-  <footer>
-    <p>&copy; 2025 红龙榴莲产业集团</p>
-  </footer>
+    <!-- 封面 -->
+    <section class="cover">
+        <img src="集团logo.png" alt="LOGO" class="logo">
+        <h1>榴莲果树投资项目</h1>
+        <p>共享榴莲产业发展红利</p>
+    </section>
+
+    <!-- 项目概览 -->
+    <section class="section">
+        <h2>项目概览</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🌱</div>
+                <h3>稀缺品种</h3>
+                <p>马来西亚黑刺榴莲(D200)</p>
+            </div>
+            <!-- 更多特性... -->
+        </div>
+    </section>
+
+    <!-- 收益模型 -->
+    <section class="section">
+        <h2>收益模型</h2>
+        <table class="data-table">
+            <tr>
+                <th>树龄阶段</th>
+                <th>年产量/株</th>
+                <th>销售单价</th>
+                <th>年收益</th>
+            </tr>
+            <tr>
+                <td>第6年</td>
+                <td>70-80kg</td>
+                <td>$6</td>
+                <td>$420-480</td>
+            </tr>
+            <!-- 更多数据行... -->
+        </table>
+    </section>
+
+    <!-- 农业投资分析 -->
+    <section class="section">
+        <h2>专业投资分析</h2>
+        <div class="analysis-card">
+            <h3>品种优势</h3>
+            <ul>
+                <li>基因纯度99.7%</li>
+                <li>可溶性固形物≥38°Brix</li>
+            </ul>
+        </div>
+        <!-- 更多分析卡片... -->
+    </section>
+
+    <!-- 合同要点 -->
+    <section class="section">
+        <h2>核心合同条款</h2>
+        <div class="contract-terms">
+            <div class="term">
+                <h4>产权保障</h4>
+                <p>30年完整产权</p>
+            </div>
+            <!-- 更多条款... -->
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <footer class="section" style="background: var(--dark); color: white;">
+        <h2>联系我们</h2>
+        <p>地址：老挝万象省欣合县榴莲产业园区</p>
+        <p>电话：+856 20 5233 7777</p>
+        <img src="qrcode.png" alt="二维码" style="width: 150px; margin: 1rem 0;">
+    </footer>
 </body>
 </html>
